@@ -33,7 +33,7 @@ gulp.task("image-minify", () => {
 });
 
 gulp.task("js-minify", function () {
-    gulp.src("src/assets/js/*.js")
+    gulp.src("src/assets/js/**/*.js")
         .pipe(sourcemaps.init())
         .pipe(concat("allscript.min.js"))
         .pipe(jsmin())
@@ -71,11 +71,12 @@ gulp.task("serve", function () {
         browser: "Firefox"
     });
     gulp.watch("src/*.html", ["html-minify"]);
-    gulp.watch("src/assets/images/*", ["image-minify"]);
+    gulp.watch("src/assets/images/**/*", ["image-minify"]);
     gulp.watch("src/assets/fonts/*", ["copy-fonts"]);
-    gulp.watch("src/assets/js/*.js",["js-minify"])
+    gulp.watch("src/assets/js/**/*.js",["js-minify"]);
     gulp.watch(lessDir + "**/*.less", ["less"]);
     gulp.watch(lessDir + "**/*.css", ["less"]);
+    gulp.watch("src/*.html").on("change", BrowserSync.reload);
     gulp.watch("dist/*.html").on("change", BrowserSync.reload);
 });
 
