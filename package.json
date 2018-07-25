@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Arslan Ameer",
-  "license": "ISC",
+  "license": "Apache-2.0",
   "dependencies": {
     "hoek": "^5.0.3",
     "npm-check-updates": "^2.14.2"
@@ -25,5 +25,13 @@
     "gulp-uglify-es": "^1.0.1",
     "less-plugin-autoprefix": "^1.5.1",
     "less-plugin-glob": "^2.0.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArslanAmeer/ajis-website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ArslanAmeer/ajis-website/issues"
+  },
+  "homepage": "https://github.com/ArslanAmeer/ajis-website#readme"
 }
