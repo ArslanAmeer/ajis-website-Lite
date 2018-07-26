@@ -25,17 +25,6 @@ header {
                 img {
                     height: 100px;
                 }
-                .name {
-                    width: 100%;
-                    margin-left: 2em;
-                    font-weight: bold;
-                    .first-line {
-                        font-size:  3.5vh;
-                    }
-                    .second-line {
-                        font-size: 2.3vh;
-                    }
-                }
 
                 &:hover {
                     cursor: pointer;
@@ -45,19 +34,22 @@ header {
             .buttons {
                 display: flex;
                 align-items: center;
-                color: white;
+                color: @primary-color;
                 ul {
                     display: flex;
                     align-items: center;
                     li {
                         margin: 0 10px;
                         a {
-                            color: white;
+                            color: @primary-color;
                             font-size: 1.28rem;
                             &:hover {
                                 cursor: pointer;
-                                color: @primary-color;
                             }
+                        }
+                        transition: transform .4s;
+                        &:hover {
+                            transform: scale(1.1) translate(0,-4px);
                         }
                     }
                 }
