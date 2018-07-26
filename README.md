@@ -1,4 +1,7 @@
 # A.J. 🛠 Industrial Services 🏭
+
+![](https://licensebuttons.net/l/by-nc-nd/4.0/88x31.png)
+
 ## ( Official Client 🤵 Business Portfolio Website )
 
 Made with Pure HTML5 CSS3 and Vanilla JavaScript.
