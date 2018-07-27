@@ -1,9 +1,15 @@
 header {
     height: 800px;
-    background-image: url("../images/header-img.jpg");
+    // background-image: url("../images/header-img.jpg");
+    background: linear-gradient(
+        rgba(5, 5, 5, 0),
+        rgba(230, 227, 227, 0.459),
+        rgba(255, 255, 255, 0)
+    ),
+    url("../images/header-img.jpg");
     background-position: top;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: cover;    
 
     .navigation {
         position: fixed;
@@ -55,6 +61,24 @@ header {
                 }
             }
 
+        }
+    }
+
+    .hero {
+        .goal {
+            display: flex;
+            text-align: center;
+            align-items: center;
+            height: 800px;
+            p {
+                border-radius: 10px;
+                font-size: 2.1rem;
+                color: @primary-color;
+                margin: 0 auto;
+                width: 70vw;
+                word-wrap: break-word;
+                // background-color: rgba(252, 252, 252, 0.336);
+            }
         }
     }
 
