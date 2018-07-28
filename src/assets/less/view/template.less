@@ -1,3 +1,6 @@
+
+// 1:  Header
+
 header {
     height: 800px;
     // background-image: url("../images/header-img.jpg");
@@ -82,4 +85,50 @@ header {
         }
     }
 
+}
+
+// 2: Main Area
+
+main {
+    padding: 4rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    section {
+        .our-mission {
+            width: 100%;
+            text-align: center;
+            span {
+                font-size: 4vh;
+                color: @primary-color;
+                font-weight: bold;
+            }
+            p {
+                font-size: 3vh;
+                margin: 2rem 3.6rem;
+            }
+        }
+    }
+}
+
+section.main {
+    background-color: @primary-color;
+    padding: 4rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .our-vision {
+        width: 100%;
+        text-align: center;
+        span {
+            font-size: 4vh;
+            color: @secondary-color;
+            font-weight: bold;
+        }
+        p {
+            font-size: 3vh;
+            margin: 2rem 3.6rem;
+            color: @secondary-color;
+        }
+    }
 }
