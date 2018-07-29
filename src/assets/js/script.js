@@ -19,3 +19,14 @@ function scrollFunction() {
     }
 
 }
+
+
+// Scrolling To Section
+
+document.getElementById("logo").onclick = function () {
+    window.scroll({ top:0, left:0, behavior: "smooth" });
+}
+
+document.getElementById("about-us").onclick = function () {
+    window.scroll({ top:740, left:0, behavior: "smooth" });
+}
